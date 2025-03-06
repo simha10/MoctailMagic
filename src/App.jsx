@@ -1,5 +1,5 @@
 import React from 'react';
-import { GlassWater, MapPin, Truck, ExternalLink, Clock, Sparkles, Star } from 'lucide-react';
+import { GlassWater, MapPin, Truck, ExternalLink, Clock, Sparkles, Star, Phone } from 'lucide-react';
 
 function App() {
   const mocktails = [
@@ -50,7 +50,7 @@ function App() {
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToZOcjsCswNSoJDwbXfWO9zfc24FL1vjE4w_X1ovpHtfMckjaM3zSnQA6kqJprZp3A8ME&usqp=CAU",
       price: "₹40",
       bestseller: false
-      },
+    },
     {
       name: "Sip Trio Combo",
       type: "Blue Berry + Any two",
@@ -70,7 +70,7 @@ function App() {
     {
       name: "Mega Mocktail Combo",
       type: "All Flavors - 2 times each",
-      description: "Get all 5 flavors 2 times. Perfect for a group of 5",
+      description: "Pay once ₹500, And get all 10 drinks of 5 flavours through out the day , the limit of each flavour is 2.",
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMIaNCut9ur5Dxiq8OAKPEmME7DWRmJi7cdqtRIAnAY2_gz82WvTAUKBvBeNTTWw4ukaE&usqp=CAU",
       price: "₹549",
       bestseller: true
@@ -100,8 +100,20 @@ function App() {
             <Clock className="w-6 h-6" />
             <p>Your Time Matters! That's Why We Deliver to Your Location</p>
           </div>
+          <div className="flex items-center justify-center gap-2 text-xl text-sky-800 mb-8 animate-fade-in-delay">
+            <Phone className="w-6 h-6" />
+            <p>Call Us at 7995229397 / 7989636255 for Queries only</p>
+          </div>
           <GlassWater className="mx-auto w-16 h-16 text-sky-600 animate-float" />
+          <a
+            href="#footer"
+            className="inline-flex items-center gap-2 bg-white text-sky-900 px-8 py-4 rounded-full text-xl font-bold hover:bg-sky-100 transition-colors duration-300 animate-bounce-subtle"
+          >
+            Order Now
+            <ExternalLink className="w-5 h-5" />
+          </a>
         </div>
+
       </header>
 
       {/* Features Section */}
@@ -136,7 +148,7 @@ function App() {
         <h2 className="text-4xl font-bold text-center text-sky-900 mb-16">Our Signature Mocktails</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {mocktails.map((mocktail, index) => (
-            <div 
+            <div
               key={index}
               className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 relative"
             >
@@ -146,8 +158,8 @@ function App() {
                   <span>Bestseller</span>
                 </div>
               )}
-              <img 
-                src={mocktail.image} 
+              <img
+                src={mocktail.image}
                 alt={mocktail.name}
                 className="w-full h-48 object-cover"
               />
@@ -177,7 +189,7 @@ function App() {
             <MapPin className="w-6 h-6" />
             <p className="text-lg">CSE Department, Sir CR Reddy College of Engineering</p>
           </div>
-          <a 
+          <a
             href="https://forms.gle/1MnTRSNEeF9PNq6f6"
             target="_blank"
             rel="noopener noreferrer"
@@ -190,7 +202,7 @@ function App() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-sky-950 text-white py-8 px-4 text-center">
+      <footer id="footer" className="bg-sky-950 text-white py-8 px-4 text-center">
         <p>© 2025 Mocktail Magic | CELESTRA 2k25</p>
       </footer>
     </div>
