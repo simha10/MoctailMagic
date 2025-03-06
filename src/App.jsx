@@ -71,7 +71,7 @@ function App() {
       name: "Mega Mocktail Combo",
       type: "All Flavors - 2 times each",
       description: "Get all 5 flavors 2 times. Perfect for a group of 5",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMIaNCut9ur5Dxiq8OAKPEmME7DWRmJi7cdqtRIAnAY2_gz82WvTAUKBvBeNTTWw4ukaE&usqp=CAU",
       price: "₹549",
       bestseller: true
     }
