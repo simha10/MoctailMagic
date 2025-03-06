@@ -1,5 +1,5 @@
 import React from 'react';
-import { GlassWater, MapPin, Truck, ExternalLink, Clock, Sparkles, Star, Phone } from 'lucide-react';
+import { GlassWater, MapPin, Truck, ExternalLink, Clock, Sparkles, Star, Phone, ArrowDown} from 'lucide-react';
 
 function App() {
   const mocktails = [
@@ -106,11 +106,10 @@ function App() {
           </div>
           <GlassWater className="mx-auto w-16 h-16 text-sky-600 animate-float" />
           <a
-            href="#footer"
             className="inline-flex items-center gap-2 bg-white text-sky-900 px-8 py-4 rounded-full text-xl font-bold hover:bg-sky-100 transition-colors duration-300 animate-bounce-subtle"
           >
-            Order Now
-            <ExternalLink className="w-5 h-5" />
+            Scroll Down to Order
+            <ArrowDown className="w-5 h-5" />
           </a>
         </div>
 
